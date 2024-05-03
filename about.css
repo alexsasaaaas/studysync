@@ -1,0 +1,196 @@
+body {
+    font-family: Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #D0D0D0;
+}
+
+header {
+    background-color: #97CBFF;
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.logo {
+    float: left; 
+    width: 100px; 
+    margin-right: 20px; 
+    margin-left: 150px; 
+    margin-top: -30px;
+    font-size: 60px;
+}
+
+nav {
+    float: right; 
+    margin-right: 20px; 
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/*banner區域*/
+.banner {
+  background-color: #336666; 
+  color:  #E6E6F2; 
+  padding: 40px 0; 
+  margin: 0 auto; 
+  text-align: center; 
+  width: 100%; 
+  box-sizing: border-box; 
+}
+
+@media screen and (max-width: 100%) {
+  .banner {
+    width: 100%;
+  }
+}
+
+.main-content {
+    padding: 20px;
+    text-align: center;
+}
+
+/*願景和使命*/
+.container { display: flex; justify-content: space-between;margin-top:40px; }
+.left-column { width: 50%; margin-left: 25%}
+.right-column { width: 110%; margin-right: 15%}
+.right-column p { font-size: 20px;}
+.section { margin-bottom: 80px; }
+.section h2 { color: #27ae60; } 
+.section p { margin: 25px 0; }
+.green-line { border-top: 3px solid #27ae60; margin: 20px 0; } 
+
+.container2 { display: flex; justify-content: space-between; }
+.left-column2 { width: 50%; margin-left: 25%}
+.right-column2 { width: 110%; margin-right: 15%}
+.right-column2 p { font-size: 20px;}
+.section2 { margin-bottom: 80px; }
+.section2 h2 { color: #27ae60; }
+.section2 p { margin: 25px 0; }
+.green-line { border-top: 3px solid #27ae60; margin: 20px 0; } 
+
+/*平台特色*/
+.little{
+    text-align: center;
+    color:purple;
+    margin-top:-30px;
+    margin-bottom:20px;
+}
+
+.box {
+    width: 300px;
+    padding: 120px;
+    background-color: #f0f0f0;
+    margin: 50px auto;
+    margin-right:480px;
+    margin-top:-10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.box-title {
+    font-size: 30px;
+    color: #B87070;
+    margin-bottom: 15px;
+    margin-top:-50px;
+    text-align: center;
+}
+
+.box-content {
+    margin-top: 70px;
+    font-size: 16px;
+    color: #666;
+}
+
+.box-button {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #ffa500;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.box-button:hover {
+    background-color: #cc8400;
+}
+
+/*公司相關資訊*/
+.information {
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-info, .navigation {
+    flex: 1;
+}
+
+.contact-info ul, .navigation ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact-info li, .navigation li {
+    padding: 5px 0;
+}
+
+.contact-info a, .navigation a {
+    color: #ffa500;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .information {
+        flex-direction: column;
+    }
+}
+
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.copyright {
+    font-size: 14px;
+}

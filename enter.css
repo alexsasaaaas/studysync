@@ -1,0 +1,120 @@
+body { 
+    font-family: Helvetica, sans-serif; 
+    background: #333; 
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #97CBFF;
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+nav {
+    float: right;
+    margin-right: 20px; 
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.logo {
+    float: left;
+    width: 100px; 
+    margin-right: 20px; 
+    margin-left: 150px; 
+    margin-top: -30px;
+    font-size: 60px;
+}
+
+/*登入頁面*/
+.main-content {
+    padding: 25px;
+    text-align: center;
+    margin-left: 50px;
+}
+
+.login-modal { 
+    margin-top: 10px;
+    width: 300px;  
+    margin: auto;
+    padding: 30px; 
+    background: #fff; 
+    border-radius: 5px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.social-buttons { margin-bottom: 20px; }
+
+.social-button { 
+    display: block;
+    width: 100%; 
+    padding: 10px; 
+    margin-bottom: 10px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+}
+
+.social-button.facebook { background: #3b5998; color: white; }
+
+.social-button.google { background: #dd4b39; color: white; }
+
+.input-group { 
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+
+.input-group input { 
+    width: 100%;
+    padding: 10px; 
+    border: 1px solid #ddd; 
+    border-radius: 5px; 
+}
+
+.login-button { 
+    width: 100%; 
+    padding: 10px; 
+    background: #0084ff; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+}
+
+.additional-options { text-align: center; margin-top: 20px; }
+
+.additional-options a { color: #0084ff; text-decoration: none; }
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.copyright {
+    font-size: 14px;
+}

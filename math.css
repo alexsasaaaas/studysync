@@ -1,0 +1,317 @@
+body {
+    font-family: Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFC1E0;
+}
+
+header {
+    background-color: #97CBFF;
+    width:100%;
+    color: white; 
+    padding: 60px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.logo {
+    float: left; 
+    width: 100px; 
+    margin-right: 20px; 
+    margin-left: 150px; 
+    margin-top: -30px;
+    font-size: 60px;
+}
+
+nav {
+    float: right; 
+    margin-right: 20px; 
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/*搜尋器*/
+.search-title {
+  color: black; 
+  font-size: 45px; 
+  margin-bottom: 30px; 
+}
+
+.search-container {
+    position: relative;
+    top:5px;
+    left: 60px;
+    width: 20%;
+    padding: 20px;
+    float: left;
+}
+
+.search-container input[type="text"] {
+    width: calc(100% - 50px); 
+    padding: 10px;
+    margin-right: 5px; /
+}
+
+.search-container button {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.hot-search-title {
+    margin-top: 20px; 
+    margin-bottom: 10px; 
+    color: #333; 
+    font-size: 16px; 
+}
+
+.hot-keywords span {
+    display: inline-block; 
+    border: 1px solid #333; 
+    padding: 5px 10px; 
+    margin-right: 10px; 
+    margin-bottom: 10px; 
+    cursor: pointer;
+    background-color: #FFE66F; 
+    border-radius: 5px; 
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/*用戶上傳筆記區域*/
+.notes-container {
+    float: right;
+    position: relative;
+    box-sizing: border-box; 
+    top:60px;
+    width: 75%;
+    padding: 20px;
+    display: flex; 
+    flex-direction: column; 
+}
+
+.button-container {
+  display: flex;
+  margin-top:30px;
+  margin-bottom: -50px; 
+  justify-content:center
+}
+
+.filter-button {
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  cursor: pointer;
+}
+
+.filter-button.active {
+  background-color: #333;
+  color: #fff;
+}
+
+.note-item {
+  background-color: #f9f9f9;
+  box-sizing: border-box; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  overflow: hidden;
+  transition: transform 0.3s ease; 
+  position: relative; 
+}
+
+.note-item:hover {
+  transform: translateY(-5px); 
+}
+
+.detail-button {
+  position: absolute; 
+  bottom: 2px; 
+  right: 10px; 
+  padding: 5px 10px; 
+  background-color: red; 
+  color: #fff; 
+  border: none; 
+  cursor: pointer; 
+  border-radius: 5px; 
+}
+
+.note-info-left {
+  flex: 20%; 
+  float: left;
+  padding:90px;
+  padding-top:80px;
+  padding-bottom: 180px;
+  padding-left: 60px;
+  padding-right: 200px;
+  background-image: url('calculus.JFIF'); 
+  background-repeat: no-repeat; 
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-calculus {
+  background-image: url('calculus.JFIF');
+}
+
+.bg-engineering-math {
+  background-image: url('engineering mathematics.WEBP');
+  padding:90px;
+  padding-top:80px;
+  padding-bottom: 180px;
+  padding-left: 60px;
+  padding-right: 200px;
+}
+
+.bg-discrete-mathematics {
+  background-image: url('discrete mathematics.WEBP');
+  padding:90px;
+  padding-top:80px;
+  padding-bottom: 180px;
+  padding-left: 60px;
+  padding-right: 200px;
+}
+
+.bg-linear-algebra {
+  background-image: url('linear algebra.JFIF');
+  padding:90px;
+  padding-top:80px;
+  padding-bottom: 180px;
+  padding-left: 60px;
+  padding-right: 200px;
+}
+
+.bg-differential-equations {
+  background-image: url('differential equations.PNG');
+  padding:90px;
+  padding-top:80px;
+  padding-bottom: 180px;
+  padding-left: 60px;
+  padding-right: 200px;
+}
+
+.bg-numerical-analysis {
+  background-image: url('numerical analysis.JPG');
+  padding:90px;
+  padding-top:80px;
+  padding-bottom: 180px;
+  padding-left: 60px;
+  padding-right: 200px;
+}
+
+
+.note-info-right {
+  flex:80%;
+  width: 70%;
+  float: right;
+  padding: 20px;
+  margin-right: 5px; 
+  color: blue; 
+}
+
+.user-stats {
+  display: flex; 
+  align-items: center; 
+  margin-bottom: 10px; 
+}
+
+.username {
+  font-weight: bold; 
+  margin-right: 15px; 
+  color: #AD5A5A;
+}
+
+.stats {
+  display: inline-flex; 
+  align-items: center; 
+  margin-right: 10px; 
+}
+
+.note-description {
+  font-size: 14px; 
+  color: #666;
+  margin-top: 10px; 
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1; 
+  overflow: hidden;
+  text-overflow: ellipsis; 
+}
+
+.note-info .fa-eye, .note-info .fa-thumbs-up {
+  font-size: 16px; 
+}
+
+.note-info h3 {
+    margin-top: 0;
+    font-size: 30px;
+}
+
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/*目前頁數*/
+.pagination-container {
+  text-align: center; 
+  padding: 10px; 
+  margin-top: 20px; 
+  background-color: #FFC1E0;
+  border-top: 1px solid #ccc; 
+  margin-bottom: 60px;
+}
+
+.page-number {
+  margin-right: 10px; 
+}
+
+.prev-page,
+.next-page {
+  padding: 5px 10px; 
+  margin: 0 5px; 
+  background-color: #e9e9e9; 
+  border: none; 
+  cursor: pointer; 
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    left:0;
+    bottom: 0;
+    width: 100%;
+}
+
+.copyright {
+    font-size: 14px;
+}
+
+@media screen and (max-width: 600px) {
+  .notes-container {
+    overflow: auto; 
+  }
+}

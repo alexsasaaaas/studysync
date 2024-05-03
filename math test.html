@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>筆記列表頁面</title>
+<link rel="stylesheet" href="math.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+	<header>
+       <div class="logo">StudySync</div>
+       <nav>
+       <ul>
+	        <li><a href="home.html">首頁</a></li>
+	        <li><a href="about.html">關於我們</a></li>
+	        <li><a href="enter.html">登入</a></li>
+	        <li><a href="register.html">會員註冊</a></li>
+	        <li><a href="notebook.html">筆記</a></li>
+        </ul>
+        </nav>
+    </header>
+
+	<div class="search-container">
+    <h2 class="search-title">數學</h2>
+  	<input type="text" id="search-input" placeholder="搜索...">
+  	<button onclick="submitSearch()">送出</button>
+  	<h4 class="hot-search-title">熱門搜尋</h4> <!-- 新增的標題 -->
+  	<div class="hot-keywords">
+    <span onclick="fillKeyword('微積分')">微積分</span>
+    <span onclick="fillKeyword('工程數學')">工程數學</span>
+    <span onclick="fillKeyword('離散數學')">離散數學</span>
+    <span onclick="fillKeyword('線性代數')">線性代數</span>
+    <!-- 更多熱門關鍵字 -->
+  	</div>
+	</div>
+
+	<script>
+	function submitSearch() {
+	  var keyword = document.getElementById('search-input').value;
+	  // 執行搜索操作，例如更新列表或發送請求到服務器
+	  console.log('搜索關鍵字：' + keyword);
+	  // 更新列表的代碼應該在這裡
+	}
+
+	function fillKeyword(keyword) {
+	  document.getElementById('search-input').value = keyword;
+	  submitSearch(); // 添加這行來觸發搜索
+	}
+	</script>
+
+	<template id="note-template">
+	<div class="note-item">
+	<div class="note-info-left">
+	  <!-- 圖片區域 -->
+	</div>
+	<div class="note-info-right">
+	<h3 class="search-title">微積分(上)</h3>
+	<div class="user-stats">
+	<span class="username">alexxxx</span>
+	<span class="stats"><i class="fas fa-eye"></i> 20</span>
+	<span class="stats"><i class="fas fa-thumbs-up"></i> 10</span>
+	<span class="stats"><i class="fas fa-comment"></i> 2</span>
+	 </div>
+	 <p class="note-description">這是我大一上學期微積分的筆記～ 內容包含:預備知識、極限、導函數、導函數的應用、積分、積分應用(一)、積分應用(二)、積分技巧、積分應用(二)、微分方程、參數式與極座標、級數、向量、向量值函數</p>
+	  <button class="detail-button">詳細</button>
+	</div>
+	 <!-- 更多筆記項目 -->
+	</template>
+
+	<div class="notes-container">
+	<script>
+	function insertNote(title, username, description, imageClass,views,likes,comments) {
+  const container = document.querySelector('.notes-container');
+  const template = document.getElementById('note-template').content.cloneNode(true);
+  
+  // 設置筆記項目的內容
+  template.querySelector('.search-title').textContent = title;
+  template.querySelector('.username').textContent = username;
+  template.querySelector('.note-description').textContent = description;
+
+  const statsElements = template.querySelectorAll('.stats');
+  if(views !== undefined) statsElements[0].innerHTML = `<i class="fas fa-eye"></i> ${views}`;
+  if(likes !== undefined) statsElements[1].innerHTML = `<i class="fas fa-thumbs-up"></i> ${likes}`;
+  if(comments !== undefined) statsElements[2].innerHTML = `<i class="fas fa-comment"></i> ${comments}`;
+
+
+  // 添加對應的背景圖片類別
+  const noteLeft = template.querySelector('.note-info-left');
+  noteLeft.classList.add(imageClass);
+  
+  container.appendChild(template);
+}
+
+// 假設這些是您的筆記數據
+	const notesData = [
+  { title: '微積分(上)', username: 'alexxxx', description: '這是我大一上學期微積分的筆記～ 內容包含:預備知識、極限、導函數、導函數的應用、積分、積分應用(一)、積分應用(二)、積分技巧、積分應用(二)、微分方程、參數式與極座標、級數、向量、向量值函數', imageClass: 'bg-calculus',views:20,likes:10,comments:2},
+  { title: '工程數學(下)', username: 'sam', description: '覺得有需要在跟我說，太多頁有點懶得更的說', imageClass: 'bg-engineering-math',views:40,likes:15,comments:2} ,
+
+  { title: '離散數學(中)', username: '文藝青年', description: '考資工所時寫的筆記，有錯歡迎底下留言指正，內文有引用他人筆記/教材/文章的地方，若有侵權十分抱歉，告知後將立刻撤除', imageClass: 'bg-discrete-mathematics'} ,
+  { title: '線性代數(上)', username: '宗宗大學', description: '內容包含:線性聯立方程式、矩陣基本運算、行列式、向量空間與基底、線性相依與線性獨立、線性轉換、正交空間、特徵值、與特徵向量', imageClass: 'bg-linear-algebra'} ,
+  { title: '微分方程(下)', username: 'ya', description: '好難', imageClass: 'bg-differential-equations'} ,
+  { title: '數值分析(下)', username: '無聊的大學生', description: '這個是我大三做的筆記，給有需要的人做參考~', imageClass: 'bg-numerical-analysis'} ,
+   // 添加更多筆記數據...
+];
+
+// 插入筆記數據
+	notesData.forEach(note => {
+	  insertNote(note.title, note.username, note.description, note.imageClass, note.views, note.likes, note.comments);
+	});
+</script>
+</body>
+
+<div class="pagination-container">
+  <span class="page-number">頁數：1 / 10</span>
+  <button class="prev-page">上一頁</button>
+  <button class="next-page">下一頁</button>
+</div>
+
+<footer>
+<div class="copyright">
+    &copy; 版權所有 學號：R46121297 姓名：陳世乾
+</div>
+</footer>
+</html>

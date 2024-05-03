@@ -1,0 +1,197 @@
+body {
+    font-family: Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #D0D0D0;
+}
+
+header {
+    background-color: #97CBFF;
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+nav {
+    float: right; 
+    margin-right: 20px; 
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.logo {
+    float: left; 
+    width: 100px; 
+    margin-right: 20px; 
+    margin-left: 150px; 
+    margin-top: -30px;
+    font-size: 60px;
+}
+
+/*banner那邊*/
+.begin {
+    padding: 10px;
+    text-align: center; 
+    color: #5151A2;
+}            
+
+.description{
+    margin: 20px;
+    text-align: center;
+}
+
+.grid-container{
+    display:flex;
+    justify-content: space-evenly;
+    text-align: center;
+    padding:20px;
+    margin-bottom: 60px;
+    color: #B766AD;
+}
+
+.grid-item{
+    padding:10px;
+    text-align: center;
+}
+
+.interface{
+    width:100px;
+    height:auto;
+}
+
+.subject{
+    width:100px;
+    height:auto;
+}
+
+.quality{
+    width:100px;
+    height:auto;
+}
+
+.main-content {
+    padding: 0px;
+    text-align: center;
+    position: relative; 
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  height: 300px; 
+  background-image: url('notebook.JPG'); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  padding-top:20px;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000093; 
+    text-align: center; 
+    font-size: 21px;
+}
+
+/*熱門筆記區域*/
+.popular-notes {
+    text-align: center;
+    color:#F75000;
+    background-color: #E6CAFF;
+}
+
+.note-grid-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    padding: 20px;
+    margin-top: -35px;
+}
+
+.note-grid-item {
+    border: 1px solid none;
+    padding: 10px;
+    margin: 500px; 
+}
+
+.note-grid-item.large {
+    flex: -1; 
+    margin: 5px; 
+    font-size: 30px;
+}
+
+.note-grid-item.large img {
+    max-width: 100%; 
+    max-height: 300px; 
+    display: block; 
+    margin: auto; 
+    transition: transform 0.3s ease; /
+}
+
+.note-grid-item.large :hover {
+    transform: scale(1.1); 
+}
+
+.note-grid-item.small {
+    flex: 1; 
+    margin: 60px; 
+}
+
+.note-grid-item.small img{
+    max-width: 100%; 
+    max-height: 200px; 
+    display: block; 
+    margin: auto; 
+    transition: transform 0.3s ease; 
+}
+
+/*在社群媒體上關注我們*/
+.social-media-follow {
+    text-align: center;
+    margin: 20px;
+}
+
+
+.social-icons .fa-instagram,
+.social-icons .fa-facebook-f {
+    font-size: 50px; 
+    margin: 0 10px;
+    padding:50px;
+    cursor: pointer; 
+    margin-bottom: 50px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.copyright {
+    font-size: 14px;
+}

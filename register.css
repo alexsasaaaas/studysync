@@ -1,0 +1,135 @@
+body { 
+  font-family: Helvetica, sans-serif; 
+  background: #333; 
+  margin: 0;
+  padding: 0;
+}
+
+header {
+    background-color: #97CBFF;
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+nav {
+    float: right; 
+    margin-right: 20px; 
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.logo {
+    float: left; 
+    width: 100px; 
+    margin-right: 20px;
+    margin-left: 150px; 
+    margin-top: -30px;
+    font-size: 60px;
+}
+
+/*按鈕*/
+.main-content {
+    padding: 25px;
+    text-align: center;
+    margin-left: 50px;
+}
+
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+}
+
+.register-form {
+  width: 100%;
+  max-width: 350px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-right: 20px;
+  width: calc(100% - 20.5px);
+}
+
+.register-button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #0056b3;
+  color: white;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.social-media-login p {
+  text-align: center;
+}
+
+.social-button {
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 5px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.social-button.fb { background-color: #498ad5; color: white; }
+
+.social-button.google { background-color: #e6162d; color: white; }
+
+.additional-options { text-align: center; margin-top: 20px; }
+
+.additional-options a { color: #0084ff; text-decoration: none; }
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.copyright {
+    font-size: 14px;
+}
