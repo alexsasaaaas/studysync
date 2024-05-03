@@ -163,18 +163,18 @@ nav ul li a {
   padding-bottom: 180px;
   padding-left: 60px;
   padding-right: 200px;
-  background-image: url('calculus.JFIF'); 
+  background-image: url('calculus.jfif'); 
   background-repeat: no-repeat; 
   background-size: cover;
   background-position: center;
 }
 
 .bg-calculus {
-  background-image: url('calculus.JFIF');
+  background-image: url('calculus.jfif');
 }
 
 .bg-engineering-math {
-  background-image: url('engineering mathematics.WEBP');
+  background-image: url('engineering mathematics.webp');
   padding:90px;
   padding-top:80px;
   padding-bottom: 180px;
@@ -183,7 +183,7 @@ nav ul li a {
 }
 
 .bg-discrete-mathematics {
-  background-image: url('discrete mathematics.WEBP');
+  background-image: url('discrete mathematics.webp');
   padding:90px;
   padding-top:80px;
   padding-bottom: 180px;
@@ -192,7 +192,7 @@ nav ul li a {
 }
 
 .bg-linear-algebra {
-  background-image: url('linear algebra.JFIF');
+  background-image: url('linear algebra.jfif');
   padding:90px;
   padding-top:80px;
   padding-bottom: 180px;
@@ -201,7 +201,7 @@ nav ul li a {
 }
 
 .bg-differential-equations {
-  background-image: url('differential equations.PNG');
+  background-image: url('differential equations.png');
   padding:90px;
   padding-top:80px;
   padding-bottom: 180px;
@@ -210,7 +210,7 @@ nav ul li a {
 }
 
 .bg-numerical-analysis {
-  background-image: url('numerical analysis.JPG');
+  background-image: url('numerical analysis.jpg');
   padding:90px;
   padding-top:80px;
   padding-bottom: 180px;
